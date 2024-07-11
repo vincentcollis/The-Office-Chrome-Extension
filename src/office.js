@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', quoteRandomizer)
 refreshButton.addEventListener('click', () => {
     answerPic.style.display = 'none'
     answerName.style.display = 'none'
+    refreshButton.innerText = 'SKIP'
     // add logic to hide div of background using document query selector
     quoteRandomizer()
 })
@@ -46,4 +47,5 @@ answerButton.addEventListener('click', () => {
     // add logic to show div of background using document query selector
     answerPic.style.display = 'block'
     answerName.style.display = 'block'
+    refreshButton.innerText = 'NEXT QUOTE'
 })
